@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <meta
+        name="description"
+        content="Airline Operational Performance Analysis by OarkHong Lim using Python and MySQL."
+    >
+    <title>Airline Operational Performance Analysis | OarkHong Lim</title>
+    <link rel="stylesheet" href="../style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+    <header>
+        <div class="logo">OarkHong Lim</div>
+        <nav>
+            <ul>
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#projects">Projects</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="project-page">
+        <section class="project-hero">
+            <div class="container">
+                <a href="../index.html#projects" class="back-link">← Back to Projects</a>
+                <p class="project-type">Data Analytics Project</p>
+                <h1 class="project-title">Airline Operational Performance Analysis</h1>
+
+                <p class="project-summary">
+                    An end-to-end data analytics project analysing U.S. domestic
+                    airline operational performance from 2019 to 2023 using Python
+                    and MySQL. The project combines data cleaning, exploratory data
+                    analysis, SQL analysis and evidence-based recommendations to
+                    identify delay patterns, cancellation trends and opportunities
+                    to improve operational reliability.
+                </p>
+
+                <div class="technology-tags">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+                    <span>Seaborn</span>
+                    <span>MySQL</span>
+                    <span>Business Analysis</span>
+                </div>
+
+                <div class="project-buttons">
+                    <a
+                        href="https://github.com/oarkhonglim/airline-operational-performance-analysis"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn"
+                    >
+                        View GitHub Repository
+                    </a>
+
+                    <a
+                        href="https://github.com/oarkhonglim/airline-operational-performance-analysis/tree/main/report"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline"
+                    >
+                        View Project Report
+                    </a>
+
+                    <a
+                        href="https://github.com/oarkhonglim/airline-operational-performance-analysis/tree/main/python"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-outline"
+                    >
+                        View Python Notebook
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Project Overview</h2>
+                <div class="project-content-grid">
+                    <article class="card">
+                        <h3>Business Background</h3>
+                        <p>
+                            Airlines operate complex networks involving aircraft,
+                            crews, airports and flight schedules. Delays and
+                            cancellations can disrupt these networks, increase
+                            operating costs and negatively affect passenger
+                            satisfaction.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Business Problem</h3>
+                        <p>
+                            Airline decision-makers need greater visibility into
+                            the causes and patterns of operational disruption.
+                            Without analysing historical flight data, recurring
+                            issues across airlines, airports, routes and seasons
+                            may remain difficult to identify.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Project Objective</h3>
+                        <p>
+                            Analyse airline operational data to evaluate delay and
+                            cancellation performance, identify major disruption
+                            drivers and develop data-driven recommendations to
+                            improve operational reliability.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Dataset</h3>
+                        <p>
+                            The Flights Sample 3M dataset contains approximately
+                            three million U.S. domestic flight records covering
+                            2019 to 2023. It includes airline, airport, route,
+                            schedule, cancellation and delay-cause information.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Business Questions</h2>
+                <div class="project-content-grid">
+                    <article class="card">
+                        <ul class="project-list">
+                            <li>Which airlines experienced the highest average arrival and departure delays?</li>
+                            <li>Which airlines recorded the highest cancellation rates?</li>
+                            <li>What were the most common causes of flight delays?</li>
+                            <li>Which destination airports experienced the highest average arrival delays?</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <ul class="project-list">
+                            <li>How did delays and cancellations vary throughout the year?</li>
+                            <li>Which routes experienced the greatest operational disruption?</li>
+                            <li>How did operational performance differ between airlines?</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Methodology</h2>
+                <div class="project-content-grid">
+                    <article class="card">
+                        <p class="step-label">Step 1</p>
+                        <h3>Data Cleaning</h3>
+                        <p>
+                            Used Python and Pandas to inspect the dataset, remove
+                            duplicate records, handle missing values and prepare
+                            the operational fields for analysis.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <p class="step-label">Step 2</p>
+                        <h3>Exploratory Data Analysis</h3>
+                        <p>
+                            Used Matplotlib and Seaborn to examine airline flight
+                            volumes, cancellations, delay distributions, delay
+                            causes, monthly trends and variable correlations.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <p class="step-label">Step 3</p>
+                        <h3>SQL Analysis</h3>
+                        <p>
+                            Imported the cleaned dataset into MySQL and developed
+                            queries using aggregation, conditional aggregation,
+                            grouping, filtering and percentage calculations.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <p class="step-label">Step 4</p>
+                        <h3>Business Interpretation</h3>
+                        <p>
+                            Interpreted the findings across airlines, airports,
+                            routes and seasonal periods before developing
+                            practical, evidence-based business recommendations.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Visualisation Gallery</h2>
+                <div class="dashboard-gallery">
+                    <article class="dashboard-card">
+                        <div class="dashboard-description">
+                            <h3>Number of Flights by Airline</h3>
+                            <p>
+                                Compares flight volumes across airlines to show the
+                                relative scale of each carrier's operations within
+                                the dataset.
+                            </p>
+                        </div>
+                        <img
+                            src="../images/flights_by_airline.png"
+                            alt="Bar chart showing the number of flights by airline"
+                        >
+                    </article>
+
+                    <article class="dashboard-card">
+                        <div class="dashboard-description">
+                            <h3>Flight Cancellation Status</h3>
+                            <p>
+                                Compares completed and cancelled flights to provide
+                                an overview of cancellation performance across the
+                                dataset.
+                            </p>
+                        </div>
+                        <img
+                            src="../images/flight_cancellation_status.png"
+                            alt="Chart comparing completed and cancelled flights"
+                        >
+                    </article>
+
+                    <article class="dashboard-card">
+                        <div class="dashboard-description">
+                            <h3>Distribution of Arrival Delays</h3>
+                            <p>
+                                Examines the distribution of arrival-delay minutes
+                                and highlights the presence of extreme operational
+                                disruptions.
+                            </p>
+                        </div>
+                        <img
+                            src="../images/arrival_delay_distribution.png"
+                            alt="Histogram showing the distribution of arrival delays"
+                        >
+                    </article>
+
+                    <article class="dashboard-card">
+                        <div class="dashboard-description">
+                            <h3>Total Delay Minutes by Cause</h3>
+                            <p>
+                                Compares total delay minutes attributed to carrier,
+                                late-aircraft, National Airspace System, weather and
+                                security causes.
+                            </p>
+                        </div>
+                        <img
+                            src="../images/delay_minutes_by_cause.png"
+                            alt="Bar chart showing total delay minutes by cause"
+                        >
+                    </article>
+
+                    <article class="dashboard-card">
+                        <div class="dashboard-description">
+                            <h3>Monthly Flight Volume</h3>
+                            <p>
+                                Displays changes in monthly flight activity between
+                                2019 and 2023, including the decline during 2020 and
+                                the subsequent recovery.
+                            </p>
+                        </div>
+                        <img
+                            src="../images/monthly_flight_volume.png"
+                            alt="Line chart showing monthly flight volume from 2019 to 2023"
+                        >
+                    </article>
+
+                    <article class="dashboard-card">
+                        <div class="dashboard-description">
+                            <h3>Operational Correlation Matrix</h3>
+                            <p>
+                                Shows relationships between operational variables,
+                                including the strong association between departure
+                                and arrival delays.
+                            </p>
+                        </div>
+                        <img
+                            src="../images/operational_correlation_matrix.png"
+                            alt="Correlation matrix of airline operational variables"
+                        >
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Key Business Insights</h2>
+                <div class="project-content-grid">
+                    <article class="card">
+                        <h3>Highest Average Delays</h3>
+                        <p>
+                            Allegiant, JetBlue and Frontier recorded the highest
+                            average arrival and departure delays, indicating
+                            weaker schedule reliability than other airlines.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Highest Cancellation Rates</h3>
+                        <p>
+                            ExpressJet, Allegiant and Mesa recorded the highest
+                            cancellation rates among the airlines analysed.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Primary Delay Causes</h3>
+                        <p>
+                            Carrier-related and late-aircraft delays contributed
+                            the greatest total delay minutes, followed by National
+                            Airspace System delays.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Seasonal Disruption</h3>
+                        <p>
+                            June recorded the highest average delays, while April
+                            recorded the highest cancellation rate. November had
+                            the lowest cancellation rate.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>High-Disruption Routes</h3>
+                        <p>
+                            Newark appeared in each of the three routes with the
+                            highest cancellation rates, making these routes useful
+                            priorities for further operational investigation.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Strongest Operational Performance</h3>
+                        <p>
+                            Hawaiian, Delta, Horizon, Alaska and Endeavor
+                            demonstrated the strongest overall performance across
+                            cancellation, delay and schedule-adherence measures.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Business Recommendations</h2>
+                <div class="project-content-grid">
+                    <article class="card">
+                        <h3>Improve Carrier-Related Operational Processes</h3>
+                        <p>
+                            Review crew scheduling, aircraft turnaround,
+                            maintenance planning and disruption recovery processes
+                            to reduce delays within airline control.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Prioritise High-Disruption Routes</h3>
+                        <p>
+                            Conduct route-level operational reviews to identify
+                            recurring causes of cancellations and delays on the
+                            most disrupted services.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Strengthen Seasonal Operational Planning</h3>
+                        <p>
+                            Increase staffing, reserve aircraft availability and
+                            contingency planning during periods with historically
+                            high delays or cancellation rates.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Benchmark Operational Performance</h3>
+                        <p>
+                            Compare airline performance using multiple indicators,
+                            including cancellation rate, departure delay and
+                            schedule adherence, rather than relying on one KPI.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section>
+            <div class="container">
+                <h2 class="section-title">Project Files</h2>
+                <div class="project-files">
+                    <a
+                        href="https://github.com/oarkhonglim/airline-operational-performance-analysis/tree/main/report"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="file-card"
+                    >
+                        <h3>Project Report</h3>
+                        <p>
+                            Read the complete analysis, findings,
+                            recommendations and conclusion.
+                        </p>
+                    </a>
+
+                    <a
+                        href="https://github.com/oarkhonglim/airline-operational-performance-analysis/tree/main/python"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="file-card"
+                    >
+                        <h3>Python Notebook</h3>
+                        <p>
+                            Review the Python code used for data cleaning,
+                            exploratory analysis and visualisation.
+                        </p>
+                    </a>
+
+                    <a
+                        href="https://github.com/oarkhonglim/airline-operational-performance-analysis/tree/main/sql"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="file-card"
+                    >
+                        <h3>SQL Queries</h3>
+                        <p>
+                            Review the MySQL queries used to answer the project's
+                            operational business questions.
+                        </p>
+                    </a>
+
+                    <a
+                        href="https://github.com/oarkhonglim/airline-operational-performance-analysis/tree/main/dataset"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="file-card"
+                    >
+                        <h3>Dataset</h3>
+                        <p>
+                            Access information about the flight dataset used for
+                            the analysis, subject to its original licence.
+                        </p>
+                    </a>
+                </div>
+
+                <p class="project-note">
+                    The project uses the Flights Sample 3M dataset sourced from
+                    Kaggle. The flight data was originally published by the
+                    U.S. Department of Transportation Bureau of Transportation
+                    Statistics.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 OarkHong Lim. All rights reserved.</p>
+    </footer>
+</body>
+</html>
